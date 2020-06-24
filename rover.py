@@ -1,21 +1,16 @@
-
 class Rover:
-	
-	def __init__(self, ):
-		"""
+
+    def __init__(self, x, y):
+        """
 		Initialises the rover
 		"""
-		pass
-	
-	def move(self, direction, cycles):
-		"""
-		Moves the rover on the planet
-		"""
-		pass
-	
-	def wait(self, cycles):
-		"""
-		The rover will wait for the specified cycles
-		"""
-		pass
-	
+        self.x = x
+        self.y = y
+        self.battery = 100
+
+    def get_coordinates(self):
+        return self.x, self.y
+
+    def update_coordinates(self, x, y):
+        self.x = x
+        self.y = y

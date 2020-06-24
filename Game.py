@@ -27,7 +27,7 @@ def start_game(level_filename):
     The level file is read and the game is played by the user.
     """
 
-    print("The level has started.")
+
 
 
 def help_menu():
