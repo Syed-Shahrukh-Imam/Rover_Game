@@ -1,34 +1,27 @@
 class Tile:
 
-	def __init__(self, ):
+	def __init__(self, shaded, high_elevation, low_elevation ):
 		"""
 		Initialises the terrain tile and attributes
 		"""
-		pass
+		self.shaded = shaded
+		self.high_elevation = high_elevation
+		self.low_elevation = low_elevation
+		self.explored = False  #Initially a tile is marked as unexplored.
 
 
-	def elevation(self):
-		"""
-		Returns an integer value of the elevation number 
-		of the terrain object
-		"""
-		pass
+	def get_explored(self):
+		return self.explored
+
+
+	def make_explored(self):
+		self.explored = True
+
+	def max_elev(self):
+		return self.high_elevation
+
+	def min_elev(self):
+		return self.low_elevation
 
 	def is_shaded(self):
-		"""
-		Returns True if the terrain tile is shaded, otherwise False
-		"""
-		pass
-
-	def set_occupant(self, obj):
-		"""
-		Sets the occupant on the terrain tile
-		"""
-		pass
-
-	def get_occupant(self):
-		"""
-		Gets the entity on the terrain tile
-		If nothing is on this tile, it should return None
-		"""
-		pass
+		return self.shaded
