@@ -1,12 +1,10 @@
 import sys
 
-
 def main_menu():
     """This function starts the game and prints out the menu
     for the user. The user then enters the level he wants to play."""
 
     print("************WELCOME TO THE ROVER GAME! TIME TO EXPLORE A PLANET************")
-
 
     # Users can enter START <level>, HELP, or Quit
 
@@ -21,7 +19,8 @@ def main_menu():
         else:
             print("Invalid Command. TRY AGAIN!!!")
 
-def start_game( level_filename ):
+
+def start_game(level_filename):
     """
     :param level_filename:
 
@@ -29,6 +28,7 @@ def start_game( level_filename ):
     """
 
     print("The level has started.")
+
 
 def help_menu():
     """
@@ -41,9 +41,9 @@ def help_menu():
     QUIT : Quits the game.
     """)
 
+
 def quit_the_game():
     sys.exit(0)
-
 
 
 main_menu()
