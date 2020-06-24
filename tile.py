@@ -13,7 +13,6 @@ class Tile:
 	def get_explored(self):
 		return self.explored
 
-
 	def make_explored(self):
 		self.explored = True
 
