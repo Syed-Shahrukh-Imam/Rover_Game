@@ -15,7 +15,12 @@ class Planet:
 		return self.rover
 
 	def get_percent_explored(self):
-		pass
+		num_explored = 0
+		for x in range(0, self.width):
+			for y in range(0, self.height):
+				if self.tiles[x][y].get_explored():
+					num_explored += 1
+		return int(num_explored / (self.width * self.height) * 100)
 
 	def get_name(self):
 		return self.name
